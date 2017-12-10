@@ -8,10 +8,13 @@ import Grid from 'material-ui/Grid';
 import Paper from 'material-ui/Paper';
 import Phone from './components/Layout/Phone';
 import AltImg from './components/Layout/AltImg';
+import Common from './components/NetFlix/Common';
 import ortho from './orthoImage.jpg';
+
 
 class App extends Component {
   render() {
+    let data = {};
     return (
       <AppWrapper className="container ">
         <Grid container spacing={24}>
@@ -75,15 +78,73 @@ class App extends Component {
               </div>
             </Paper>
             </Grid>
-
-
-            <Grid item xs={12} sm={6} lg={3}>
-            </Grid>
-
+{/*            <Grid item xs={12} sm={6} lg={12}>
+              <Base data={data} />
+              <div className={css.JawBoneCommon}>
+                <Common data={data}/>
+            </Grid>*/}
           <div className="dataSection" />
 
-          <Grid item xs={12} sm={0} lg={2} />
+          <Grid item xs={12} sm={0} lg={12} >
+            <h2 className="section-heading">Add Reviews To Your Site:</h2>
+          </Grid>
+          <Grid item xs={12} sm={12} lg={4}>
+            <Paper>
+              <div className="stars-header">
+                <span className="star">&#x2605;</span>
+                <span className="star">&#x2605;</span>
+                <span className="star">&#x2605;</span>
+                <span className="star">&#x2605;</span>
+                <span className="star" >&#x2605;</span>
 
+              </div>
+              <div className="customer-info">
+                <h4>Samantha A.</h4>
+                <small>9/27/2017</small>
+                <p>As long a long time customer, I'll never take my car in for necessary maintenance or cleanings on my own ever again. </p>
+                <small>Verified Customer</small>
+                <h5><Button raised color="primary" target="_blank" href="https://www.yelp.com/biz/yourtime-austin">View more on Yelp</Button></h5>
+              </div>
+            </Paper>
+          </Grid>
+          <Grid item xs={12} sm={12} lg={4}>
+            <Paper>
+              <div className="stars-header">
+                <span className="star">&#x2605;</span>
+                <span className="star">&#x2605;</span>
+                <span className="star">&#x2605;</span>
+                <span className="star">&#x2605;</span>
+                <span className="star" >&#x2605;</span>
+
+              </div>
+              <div className="customer-info">
+                <h4>Katy B.</h4>
+                <small>9/27/2017</small>
+                <p>As long a long time customer, I'll never take my car in for necessary maintenance or cleanings on my own ever again. </p>
+                <small>Verified Customer</small>
+                <h5><Button raised color="primary" target="_blank" href="https://www.yelp.com/biz/yourtime-austin">View more on Yelp</Button></h5>
+              </div>
+            </Paper>
+          </Grid>
+          <Grid item xs={12} sm={12} lg={4}>
+            <Paper>
+              <div className="stars-header">
+                <span className="star">&#x2605;</span>
+                <span className="star">&#x2605;</span>
+                <span className="star">&#x2605;</span>
+                <span className="star">&#x2605;</span>
+                <span className="star" >&#x2605;</span>
+
+              </div>
+              <div className="customer-info">
+                <h4>Chris L.</h4>
+                <small>9/27/2017</small>
+                <p>As long a long time customer, I'll never take my car in for necessary maintenance or cleanings on my own ever again. </p>
+                <small>Verified Customer</small>
+                <h5><Button raised color="primary" target="_blank" href="https://www.yelp.com/biz/yourtime-austin">View more on Yelp</Button></h5>
+              </div>
+            </Paper>
+          </Grid>
 
         </Grid>
 
