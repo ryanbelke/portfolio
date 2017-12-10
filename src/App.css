@@ -52,8 +52,16 @@ p { font-family: 'Lato', sans-serif; }
   color: #1ecd97; }
 #checkMark.done span:first-child, #checkMark.done span:last-child {
   transform: translate3d(0, -100%, 0); }
-#inputTel {text-align: center;}
+#inputTel {text-align: center; font-size: 2.0em; }
 #result {color: rgb(38, 166, 154); font-weight: bold; }
+#phone {
+    padding: 50px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
 #submitButton {
   appearance: none;
   -moz-appearance: none;
@@ -168,7 +176,7 @@ h1 {
   letter-spacing: -2px;
   margin-bottom: 30px;
   text-align: left; }
-
+.TextField { width: 90% !important; }
 h2 {
   font-size: 1.2em;
   letter-spacing: -1px;
@@ -187,8 +195,8 @@ h6 { font-size: 1.2em; margin: 15px 0; }
   display: block; }
 
 @media (max-width: 750px) {
-  #priceChecker { margin-top: 100px; }
-    .PurchaseApp {margin-top: 100px !important; }
+  #priceChecker { margin-top: 20px; }
+    .PurchaseApp {margin-top: 10px !important; }
   .icon {
     width: 300px;
     height: 300px;

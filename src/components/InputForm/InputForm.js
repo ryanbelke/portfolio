@@ -37,6 +37,10 @@ class TextFieldForm extends React.Component {
   onSubmit = () => {
     const data = this.state.formData;
     this.setState({snack: true, snackMessage: "Thank you!!"});
+    this.setState({
+      formData: { name: '', email: '', budget: 1, phoneNumber: '', lastName: '' }
+    });
+
     // request
     //   .post('/submit', data)
     //   .then(() => this.setState({
@@ -170,17 +174,17 @@ class TextFieldForm extends React.Component {
                   </MenuItem>
                 )}
               </Menu>
-              <H1 smallMargin fontSize="12px" color="#283593"> is my selection </H1>
               </Left>
               <Right quarter noPadding>
-                <span> {this.state.formData.budget}</span>
+                <h5>selection: </h5>
+                <span style={styles.font}> {this.state.formData.budget}</span>
               </Right>
             </FlexFull>
             <FlexFull noPadding noMargin>
-              <Left half noPadding>
+              <Left flex=".80" noPadding>
               <TextField
                 id="email"
-                label="ryan@email.com"
+                label="Email"
                 placeholder="email"
                 className="TextField"
                 value={this.state.formData.email}
@@ -194,9 +198,12 @@ class TextFieldForm extends React.Component {
             </FlexFull>
             <FlexFull noPadding noMargin>
               <Left half noPadding>
+                <br />
+                <label>Phone Number</label>
               <Input
                 id="phone"
                 placeholder="phone"
+                label="Number"
                 inputComponent={this.TextMaskCustom}
                 className="TextField"
                 value={this.state.formData.phoneNumber}
@@ -227,8 +234,16 @@ const styles = {
     fontSize: '1.0em',
     padding: 0,
     color: '#0D47A1',
-    width: '70%',
-
+    width: '80%',
+  },
+  emailField: {
+    marginLeft: 5,
+    marginRight: 5,
+    marginTop: 0,
+    fontSize: '1.0em',
+    padding: 0,
+    color: '#0D47A1',
+    width: '100%',
   },
   selector: {
     width: 100,
@@ -237,7 +252,6 @@ const styles = {
   button: {
     fontSize: '1.0em',
     width: 150,
-    marginLeft: 70,
     marginRight: 'auto',
   },
   contact: {
@@ -247,6 +261,7 @@ const styles = {
     padding: 0,
     fontSize: 20,
   },
+
   div: {
     margin: '0 auto',
     marginBottom: 5,

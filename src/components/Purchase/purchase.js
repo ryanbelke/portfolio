@@ -110,7 +110,7 @@ const styles = {
   div: { padding: 5, textAlign: 'center' },
   textField: { textAlign: 'center' },
   text: {
-    fontSize: '2.0em',
+    fontSize: '2.5em',
     width: '50%',
     marginBottom: 20,
 
