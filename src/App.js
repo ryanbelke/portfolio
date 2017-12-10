@@ -16,7 +16,7 @@ class App extends Component {
   render() {
     let data = {};
     return (
-      <AppWrapper className="container ">
+      <AppWrapper className="root ">
         <Grid container spacing={24}>
           <Grid item xs={12}>
           </Grid>
@@ -85,7 +85,7 @@ class App extends Component {
             </Grid>*/}
           <div className="dataSection" />
 
-          <Grid item xs={12} sm={0} lg={12} >
+          <Grid item xs={12} sm={12} lg={12} >
             <h2 className="section-heading">Add Reviews To Your Site:</h2>
           </Grid>
           <Grid item xs={12} sm={12} lg={4}>

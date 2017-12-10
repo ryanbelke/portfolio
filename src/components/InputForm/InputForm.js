@@ -98,12 +98,10 @@ class TextFieldForm extends React.Component {
         />
         <Card>
           <CardContent>
-            <H1 fontSize="1.0=5" noReduce weight="400" margin="5px 0px 4px 0px"
+            <H1 fontSize="1.5" noReduce weight="400" margin="5px 0px 4px 0px"
                 fontFamily="'Lato', sans-serif" primary="#414141" lineHeight="3" >
               Hit me with that info
             </H1>
-            <FlexFull noPadding noMargin>
-              <Left three noPadding className="left">
               <TextField
                 id="name"
                 label="First Name"
@@ -113,14 +111,8 @@ class TextFieldForm extends React.Component {
                 onChange={(event) => this.onChange.bind(this, 'name')(event.target.value)}
                 style={styles.TextField}
               />
-              </Left>
-              <Right noPadding quarter >
+            <br />
                 <span>{this.state.formData.name}</span>
-              </Right>
-            </FlexFull>
-
-            <FlexFull noPadding noMargin>
-              <Left three noPadding>
             <TextField
               id="Lname"
               label="Last Name"
@@ -130,14 +122,9 @@ class TextFieldForm extends React.Component {
               onChange={(event) => this.onChange.bind(this, 'lastName')(event.target.value)}
               style={styles.TextField}
             />
-              </Left>
-              <Right noPadding quarter  >
+             <br />
                 <span> {this.state.formData.lastName}</span>
-              </Right>
-          </FlexFull>
             <br />
-            <FlexFull noPadding noMargin>
-              <Left half noPadding>
               <div style={styles.list}>
                 <List>
                   <ListItem
@@ -174,14 +161,10 @@ class TextFieldForm extends React.Component {
                   </MenuItem>
                 )}
               </Menu>
-              </Left>
-              <Right quarter noPadding>
-                <h5>selection: </h5>
+                <br />
+                <small>selection: </small>
                 <span style={styles.font}> {this.state.formData.budget}</span>
-              </Right>
-            </FlexFull>
-            <FlexFull noPadding noMargin>
-              <Left flex=".80" noPadding>
+            <br />
               <TextField
                 id="email"
                 label="Email"
@@ -191,30 +174,23 @@ class TextFieldForm extends React.Component {
                 onChange={(event) => this.onChange.bind(this, 'email')(event.target.value)}
                 style={styles.TextField}
               />
-              </Left>
-              <Right quarter noPadding>
+              <br />
                 <span> {this.state.formData.email}</span>
-              </Right>
-            </FlexFull>
-            <FlexFull noPadding noMargin>
-              <Left half noPadding>
-                <br />
+                <br /><br />
+              <div className="small">
                 <label>Phone Number</label>
-              <Input
-                id="phone"
-                placeholder="phone"
-                label="Number"
-                inputComponent={this.TextMaskCustom}
-                className="TextField"
-                value={this.state.formData.phoneNumber}
-                onChange={(event) => this.onChange.bind(this, 'phoneNumber')(event.target.value)}
-                style={styles.TextField}
-              />
-              </Left>
-              <Right quarter noPadding>
+                <Input
+                  id="phone"
+                  placeholder="phone"
+                  label="Number"
+                  inputComponent={this.TextMaskCustom}
+                  value={this.state.formData.phoneNumber}
+                  onChange={(event) => this.onChange.bind(this, 'phoneNumber')(event.target.value)}
+                />
+              </div>
+            <br />
                 <span> {this.state.formData.phoneNumber}</span>
-              </Right>
-            </FlexFull>
+
           </CardContent>
           <CardActions>
             <div style={styles.div}>
@@ -234,7 +210,7 @@ const styles = {
     fontSize: '1.0em',
     padding: 0,
     color: '#0D47A1',
-    width: '80%',
+
   },
   emailField: {
     marginLeft: 5,
@@ -255,11 +231,15 @@ const styles = {
     marginRight: 'auto',
   },
   contact: {
-    width: '90%',
+    width: '100%',
+    textAlign: 'center',
   },
   list: {
     padding: 0,
-    fontSize: 20,
+    fontSize: 25,
+    margin: '0 auto',
+    width: '50%',
+    background: '#F5F5F5',
   },
 
   div: {

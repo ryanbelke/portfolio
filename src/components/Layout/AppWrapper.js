@@ -15,14 +15,6 @@ const AppWrapper = styled.div`
   
   margin-top: ${(props) => props.marginTop ? props.marginTop : '8%' };
   
-  @media screen and (min-width: 300px) and (max-width: 600px) {
-    div {
-    width: 100%;
-      }
-    }
-   
-  a {
-  text-decoration: none;
-  }
+
 `;
 export default AppWrapper

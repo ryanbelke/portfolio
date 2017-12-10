@@ -1,5 +1,5 @@
 body {  background-color: #e9ebee;  padding: 20px; }
-.root { flex-grow: 1; padding: 20px; z-index: -31; }
+.root { flex-grow: 1; padding: 20px; width: 100%; }
 h1 { font-size: 3.5em; margin-bottom: 20px; }
 h1, h2, h3 {  font-weight: 900;  }
 h4 { font-family: 'Lato', sans-serif; font-size: 2.0em; margin: 5px; }
@@ -72,13 +72,9 @@ small { font-weight: bold; }
 #inputTel {text-align: center; font-size: 2.0em; }
 #result {color: rgb(38, 166, 154); font-weight: bold; }
 #phone {
-    padding: 50px;
-    background: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
+    font-size: 1.5em; width: 100%;
 }
+.small {width: 60%; margin: 0 auto; }
 #submitButton {
   appearance: none;
   -moz-appearance: none;
@@ -193,7 +189,7 @@ h1 {
   letter-spacing: -2px;
   margin-bottom: 30px;
   text-align: left; }
-.TextField { width: 90% !important; }
+.TextField { width: 90% !important; height: 60px; }
 h2 {
   font-size: 1.2em;
   letter-spacing: -1px;
