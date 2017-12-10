@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
-import Button from 'material-ui/Button';
+import TextField from 'material-ui/TextField';
 
 import css from './purchase.css';
 
@@ -42,10 +42,9 @@ class Purchase extends React.Component {
 
     if (this.state.click===0) {
       inputNode =
-        <input
+        <TextField
           id="inputTel"
           type="tel"
-          label="Zip Code"
           autoFocus
           key={this.state.click}
           value={this.state.zip}
@@ -113,6 +112,7 @@ const styles = {
   text: {
     fontSize: '2.0em',
     width: '50%',
+    marginBottom: 20,
 
   }
 };

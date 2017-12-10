@@ -94,13 +94,12 @@ class TextFieldForm extends React.Component {
         />
         <Card>
           <CardContent>
-            <H1 fontSize="1.0" noReduce weight="900" margin="5px 0px 20px 0px"
-                fontFamily="'Lato', sans-serif" primary="#414141" >
+            <H1 fontSize="1.0=5" noReduce weight="400" margin="5px 0px 4px 0px"
+                fontFamily="'Lato', sans-serif" primary="#414141" lineHeight="3" >
               Hit me with that info
-              <hr/>
             </H1>
             <FlexFull noPadding noMargin>
-              <Left half noPadding className="left">
+              <Left three noPadding className="left">
               <TextField
                 id="name"
                 label="First Name"
@@ -117,7 +116,7 @@ class TextFieldForm extends React.Component {
             </FlexFull>
 
             <FlexFull noPadding noMargin>
-              <Left half noPadding>
+              <Left three noPadding>
             <TextField
               id="Lname"
               label="Last Name"
@@ -171,7 +170,6 @@ class TextFieldForm extends React.Component {
                   </MenuItem>
                 )}
               </Menu>
-                <hr />
               <H1 smallMargin fontSize="12px" color="#283593"> is my selection </H1>
               </Left>
               <Right quarter noPadding>
@@ -223,13 +221,13 @@ class TextFieldForm extends React.Component {
 }
 const styles = {
   TextField: {
-    marginLeft: 8,
-    marginRight: 8,
+    marginLeft: 5,
+    marginRight: 5,
     marginTop: 0,
     fontSize: '1.0em',
     padding: 0,
     color: '#0D47A1',
-    width: 150,
+    width: '70%',
 
   },
   selector: {
@@ -239,9 +237,11 @@ const styles = {
   button: {
     fontSize: '1.0em',
     width: 150,
+    marginLeft: 70,
+    marginRight: 'auto',
   },
   contact: {
-    width: 250,
+    width: '90%',
   },
   list: {
     padding: 0,

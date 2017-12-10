@@ -4,12 +4,16 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "axios": "^0.17.1",
     "gh-pages": "^1.1.0",
     "material-ui": "^1.0.0-beta.23",
     "react": "^16.2.0",
     "react-addons-css-transition-group": "^15.6.2",
     "react-dom": "^16.2.0",
+    "react-flexbox-grid": "^2.0.0",
+    "react-pure-grid": "^2.1.1",
     "react-scripts": "1.0.17",
+    "react-text-mask": "^5.0.2",
     "react-transition-group": "^2.2.1",
     "styled-components": "^2.2.4"
   },
