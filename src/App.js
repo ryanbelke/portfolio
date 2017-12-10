@@ -23,6 +23,8 @@ class App extends Component {
           <Grid item xs={12} sm={6}>
             <h1>Ryan Belke</h1>
             <h4>Portfolio and development projects</h4>
+            <h6>&nbsp; &nbsp; Software Engineer &#x2022; Developer &#x2022; Creator</h6>
+
             <h6>&nbsp; &nbsp; Available for freelance projects</h6>
             <h6>&nbsp; &nbsp; Austin, Tx</h6>
             <hr /><br />
@@ -59,7 +61,7 @@ class App extends Component {
             </Grid>
           <div className="dataSection" />
           <Grid item xs={12} sm={12} lg={4}>
-            <h3>Create 3D phone effect in CSS</h3>
+            <h3>Create 3D phone effect against white background using only CSS</h3>
             <hr />
             <code style={styles.code}> box-shadow: <br />inset 20px 24px 7px 1px #fff,
               <br />inset 0 -5px 20px rgba(173,186,204,.25),
@@ -83,7 +85,6 @@ class App extends Component {
                 <Common data={data}/>
             </Grid>*/}
           <div className="dataSection" />
-
           <Grid item xs={12} sm={12} lg={12} >
             <h2 className="section-heading">Add Reviews To Your Site:</h2>
           </Grid>
@@ -145,6 +146,9 @@ class App extends Component {
             </Paper>
           </Grid>
 
+          <Grid item xs={12} sm={12} lg={12} >
+            <h2 className="section-heading">More Coming Soon</h2>
+          </Grid>
         </Grid>
 
       </AppWrapper>

@@ -45,7 +45,6 @@ class Purchase extends React.Component {
         <TextField
           id="inputTel"
           type="tel"
-          autoFocus
           key={this.state.click}
           value={this.state.zip}
           onChange={this.handleChange}
