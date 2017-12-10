@@ -1,0 +1,83 @@
+.h2 {
+  margin: 2px;
+}
+.graySpan {
+  color: lightgray;
+}
+.infoContainer {
+  padding: 5px 15px 5px 5px;
+  height: 100%;
+  width: 50%;
+  display: inline-block;
+  z-index: 2;
+  color: white;
+  left: 0;
+  position: absolute;
+
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#161514+86,161514+86,000000+100,161514+100&1+74,0.71+92,0.66+100,0.51+100,0.51+100,0.51+100,0.51+100 */
+  background: -moz-linear-gradient(left,  rgba(22,21,20,1) 74%, rgba(22,21,20,0.81) 86%, rgba(13,12,11,0.71) 92%, rgba(0,0,0,0.51) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left,  rgba(22,21,20,1) 74%,rgba(22,21,20,0.81) 86%,rgba(13,12,11,0.71) 92%,rgba(0,0,0,0.51) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right,  rgba(22,21,20,1) 70%,rgba(22,21,20,0.97) 85%,rgba(13,12,11,0.30) 92%,rgba(0,0,0,0.0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+}
+.mediaContainer {
+  height: 100%;
+  z-index: -2;
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  width: 50%;
+  top: 0;
+
+}
+.mediaContainer img {
+  width: 115%;
+  float: right;
+  height: inherit;
+}
+.rootContainer {
+  display: inline-block;
+  height: 400px;
+  margin-bottom: -5px;
+  box-shadow: 3px 4px lightgray;
+  width: 100%;
+  position: relative;
+
+}
+
+.subBar {
+  height: 50px;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  text-transform: uppercase;
+  font-size: 1.7vw;
+  z-index: 200;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#040c02+47,050202+100&0.38+47,0.17+100 */
+  background: -moz-linear-gradient(45deg,  rgba(4,12,2,0.38) 47%, rgba(5,2,2,0.17) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg,  rgba(4,12,2,0.38) 47%,rgba(5,2,2,0.17) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg,  rgba(4,12,2,0.38) 47%,rgba(5,2,2,0.17) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#61040c02', endColorstr='#2b050202',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+
+  ul {
+    color: white;
+  }
+    li {
+    margin-left: 20px;
+    }
+  }
+
+.JawBoneCommon {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  height: 85%;
+  z-index: 2;
+
+
+}
