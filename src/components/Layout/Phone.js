@@ -12,6 +12,8 @@ const Phone = styled.div`
    width: 300px;
    position: relative;
    padding: 5px;
+   margin-left: auto;
+   margin-right: auto;
    
    ${media.lessThan('medium') `
     ${(props) => props.mobile } !important;

@@ -59,7 +59,7 @@ class App extends Component {
             </Grid>
           <div className="dataSection" />
           <Grid item xs={12} sm={12} lg={4}>
-            <h3>Create phone outline in CSS</h3>
+            <h3>Create 3D phone effect in CSS</h3>
             <hr />
             <code style={styles.code}> box-shadow: <br />inset 20px 24px 7px 1px #fff,
               <br />inset 0 -5px 20px rgba(173,186,204,.25),
@@ -69,9 +69,8 @@ class App extends Component {
 
             <Grid item xs={12} sm={12} lg={5}>
               <Paper>
-
               <div id="phone">
-                  <Phone className="phone" mobile="left: 5vw; width: 300px">
+                  <Phone className="phone" mobile="margin-left: auto; margin-right: auto; width: 300px">
                     <AltImg src={ortho} widthPercent="98" height="450"
                             transform="rotate(180deg)" alt="google search for orthodontist" />
                   </Phone>
