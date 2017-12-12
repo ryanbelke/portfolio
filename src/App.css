@@ -25,6 +25,7 @@ small { font-weight: bold; }
     float: left; margin: 2px;
     font-size: 3vw;
     margin-left: auto;
+    margin-right: auto;
     color: #00D7FF;
 }
 .section-heading { font-size: 2.5em; text-align: center; }
