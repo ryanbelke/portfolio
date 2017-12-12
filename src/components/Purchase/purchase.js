@@ -53,7 +53,8 @@ class Purchase extends React.Component {
     } else {
       if(this.state.segment==='done') {
         inputNode =
-          <div style={styles.textField}> <h5 id="result" key={this.state.click}>{this.state.zip} <br /> Price: ${this.state.price}</h5></div>
+          <div style={styles.textField}> <h6 id="result" key={this.state.click}>{this.state.zip}</h6> <br />
+            <h5 className="bigH5" >Price: ${this.state.price}</h5></div>
       }
     }
     //Staes are processing and done
@@ -67,11 +68,11 @@ class Purchase extends React.Component {
       <section className="PurchaseApp" style={styles.container}>
           <div>
             <div style={styles.div}>
-              <h5>Last Purchase Price:</h5>
+              <h4>Last Purchase Price:</h4>
               <hr />
               <h4>$2.24</h4>
               <p className="h5">for zip code: 78751</p>
-              <h5 style={styles.green}>Find your price:</h5>
+              <h5 className="bigH5" style={styles.green}>Find your price:</h5>
               <hr />
               <br />
               <div style={styles.center}>
@@ -86,13 +87,13 @@ class Purchase extends React.Component {
                 </ReactCSSTransitionGroup>
               </div>
               <div style={styles.textField}>
-                <button id={this.state.id} className={currentState } onClick={this.onSubmit}>
+                <button style={styles.button} id={this.state.id} className={currentState } onClick={this.onSubmit}>
                   <span>Submit</span>
                   <span>&#10004;</span>
                 </button>
                 <br />
                 <button id='submitButton' className={this.state.noDisplay} onClick={this.handleSubmit}>
-                  <span>BUY NOW</span>
+                  <span className="bigH5">BUY NOW</span>
                 </button>
               </div>
             </div>
@@ -109,10 +110,11 @@ const styles = {
   div: { padding: 5, textAlign: 'center' },
   textField: { textAlign: 'center' },
   text: {
-    fontSize: '2.5em',
+    fontSize: '16px',
     width: '50%',
     marginBottom: 20,
 
-  }
+  },
+  button: { fontSize: '1.5em' }
 };
 

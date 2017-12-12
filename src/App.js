@@ -18,8 +18,7 @@ class App extends Component {
     return (
       <AppWrapper className="root ">
         <Grid container spacing={24}>
-          <Grid item xs={12}>
-          </Grid>
+
           <Grid item xs={12} sm={6}>
             <h1>Ryan Belke</h1>
             <h4>Portfolio and development projects</h4>
@@ -32,8 +31,8 @@ class App extends Component {
               Upwork profile
             </Button>
           </Grid>
-          <Grid item xs={12} sm={6} lg={1} />
-          <Grid item xs={12} sm={6} lg={4}>
+          <Grid item xs={0} sm={0} lg={1} />
+          <Grid item xs={12} sm={4} lg={4}>
             <img src="analytics.svg" className='icon' alt="analytics icon" />
           </Grid>
             <div className="dataSection" />
@@ -48,7 +47,7 @@ class App extends Component {
             <hr /><br /><br />
             <Purchase />
           </Grid>
-            <Grid item xs={12} sm={12} lg={4}>
+            <Grid item xs={12} sm={6} lg={4}>
               <h3>Contact Form</h3>
               <hr /><br /><br />
               <InputForm />
@@ -60,14 +59,14 @@ class App extends Component {
               </code>
             </Grid>
           <div className="dataSection" />
-          <Grid item xs={12} sm={12} lg={4}>
+          <Grid item xs={10} sm={10} lg={4}>
             <h3>Create 3D phone effect against white background using only CSS</h3>
             <hr />
             <code style={styles.code}> box-shadow: <br />inset 20px 24px 7px 1px #fff,
               <br />inset 0 -5px 20px rgba(173,186,204,.25),
               <br />0 1px 6px rgba(0,21,64,.14), 10px -10px 20px rgba(0,21,64,.15);</code>
           </Grid>
-          <Grid item xs={12} sm={0} lg={1} />
+          <Grid item xs={0} sm={0} lg={1} />
 
             <Grid item xs={12} sm={12} lg={5}>
               <Paper>
@@ -88,7 +87,7 @@ class App extends Component {
           <Grid item xs={12} sm={12} lg={12} >
             <h2 className="section-heading">Add Reviews To Your Site:</h2>
           </Grid>
-          <Grid item xs={12} sm={12} lg={4}>
+          <Grid item xs={6} sm={4} lg={4}>
             <Paper>
               <div className="stars-header">
                 <span className="star">&#x2605;</span>
@@ -107,7 +106,7 @@ class App extends Component {
               </div>
             </Paper>
           </Grid>
-          <Grid item xs={12} sm={12} lg={4}>
+          <Grid item xs={6} sm={4} lg={4}>
             <Paper>
               <div className="stars-header">
                 <span className="star">&#x2605;</span>
@@ -126,7 +125,7 @@ class App extends Component {
               </div>
             </Paper>
           </Grid>
-          <Grid item xs={12} sm={12} lg={4}>
+          <Grid item xs={6} sm={4} lg={4}>
             <Paper>
               <div className="stars-header">
                 <span className="star">&#x2605;</span>
