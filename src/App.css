@@ -23,7 +23,7 @@ p { font-family: 'Lato', sans-serif; }
 small { font-weight: bold; }
 .star {
     float: left; margin: 2px;
-    font-size: 5vw;
+    font-size: 3vw;
     margin-left: auto;
     color: #00D7FF;
 }
